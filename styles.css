@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #333;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
+
+.no-bullets li {
+    margin-bottom: 10px; /* Adds spacing between items */
+}
+footer {
+    text-align: center; /* Centers the text */
+    padding: 20px 0; /* Adds some vertical space around the footer */
+    background-color: #f8f8f8; /* Optional: Adds a light background color */
+    margin-top: 20px; /* Optional: Adds space above the footer */
+}
+
+footer p {
+    margin: 0; /* Removes default margin */
+}
