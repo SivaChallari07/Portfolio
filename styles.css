@@ -660,7 +660,7 @@ footer {
 
     .footer-section p, .footer-section ul {
         text-align: justify; /* Ensure text is justified for even line lengths */
-	     font-size: 17px;
+	     font-size: 15px;
     }
 }
 
