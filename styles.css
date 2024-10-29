@@ -7,6 +7,15 @@ body {
     color: #333;
 }
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(45deg, #ffeb3b, #fff);
+        /* Adjusted colors for mobile view */
+    }
+}
+
+
 /* Header styles */
 header {
     display: flex;
