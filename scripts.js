@@ -146,3 +146,36 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 	
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form from submitting traditionally
+
+        // Collect form data
+        const name = this.name.value;
+        const phone = this.phone.value;
+        const email = this.email.value;
+        const subject = this.subject.value;
+        const message = this.message.value;
+
+        // Send email
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "sivaram.challari@gmail.com",
+            Password: "tcls xcip nwbq ibxo", // App-specific password for Gmail
+            To: "sivaram.challari@gmail.com",      // Recipient email
+            From: "sivaram.challari@gmail.com",    // Your email (sender)
+            Subject: subject,
+            Body: `
+                Name: ${name}<br>
+                Phone: ${phone}<br>
+                Email: ${email}<br>
+                <br>
+                Message:<br>${message}
+            `
+        }).then(
+            response => alert("Message sent successfully!")
+        ).catch(
+            error => alert("Failed to send message: " + error)
+        );
+    });
+});
